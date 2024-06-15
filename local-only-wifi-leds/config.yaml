@@ -1,0 +1,21 @@
+# https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
+name: My WiFi LEDs at home
+version: "0.0.0"
+slug: my-wifi-leds
+description: Take control over the cloud-based Wifi LEDs and force them to be local
+url: "https://github.com/TheRealMephisto/my-wifi-leds"
+arch:
+  - armhf
+  - armv7
+  - aarch64
+  - amd64
+  - i386
+init: false
+map:
+  - share:rw
+options:
+  message: "Hello world..."
+schema:
+  message: "str?"
+# Commented out as I do not want to publish the build yet
+# image: "ghcr.io/home-assistant/{arch}-addon-example"
